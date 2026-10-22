@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Passive security scan: total-tennis-production.up.railway.app</title>
+<style>body{font-family:system-ui,sans-serif;max-width:820px;margin:2em auto;padding:0 1em;color:#222;line-height:1.5}h1{font-size:1.5em}.meta{color:#666}section{border-left:6px solid;padding:.5em 1em;margin:1.2em 0;border-radius:4px}.sum{border-color:#2e7d32;background:#eef7ee}.low{border-color:#f9a825;background:#fff8e1}.info{border-color:#1565c0;background:#e8f0fb}.nc{border-color:#757575;background:#f2f2f2}.tag{display:inline-block;font-weight:700;font-size:.8em;padding:2px 8px;border-radius:3px;color:#fff}.low .tag{background:#f9a825;color:#222}.info .tag{background:#1565c0}.nc .tag{background:#757575}.sum .tag{background:#2e7d32}</style></head><body>
+<h1>Passive security scan: total-tennis-production.up.railway.app</h1>
+<p class="meta">Scan date: Oct 22, 2026 &middot; Scan by: sitecheckbot</p>
+<section class="sum"><span class="tag">SUMMARY</span><p>No high or medium findings.</p></section>
+<section class="low"><span class="tag">LOW</span><ol>
+<li>The default Express 404 page ('Cannot GET /path') reveals the framework. <b>Fix:</b> add a custom 404/error handler.</li>
+<li>The CSP allows style-src/font-src from any https: plus 'unsafe-inline'. <b>Fix:</b> limit it to 'self' plus the specific font host and drop 'unsafe-inline'.</li>
+<li>HSTS is set for 1 year but not preloaded, which is expected on a railway.app subdomain.</li></ol></section>
+<section class="info"><span class="tag">INFO / GOOD</span><ul>
+<li>Helmet's default security headers</li><li>Let's Encrypt cert valid until Dec 26 2026</li><li>TLS 1.3</li><li>No X-Powered-By</li><li>No exposed files (.git/.env/backups all 404)</li><li>No cookies before login</li><li>No third-party JS</li><li>No mixed content</li><li>Permissions-Policy is missing (optional)</li></ul></section>
+<section class="nc"><span class="tag">NOT CHECKED</span><ul>
+<li>Anything behind the login</li><li>CSRF/rate limiting on forms</li><li>API endpoints</li><li>Active testing</li><li>Other hosts</li><li>DNS/email security</li><li>A full TLS version sweep</li></ul></section>
+</body></html>
